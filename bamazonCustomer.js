@@ -1,4 +1,3 @@
-
 var mysql = require('mysql');
 var inquirer = require('inquirer');
 
@@ -103,7 +102,7 @@ function logProducts(products) {
 	var row = "| ";
 	for (var i = 0; i < columns.length; i++) {
 		separator += new Array(lengths[columns[i]] + 1).join('-');
-		row += columns[i] + new Array(lengths[columns[i]] - (columnNames[columns[i]] + '').length + 1).join(' ');
+		row += columnNames[columns[i]] + new Array(lengths[columns[i]] - (columnNames[columns[i]] + '').length + 1).join(' ');
 		
 		if (i < columns.length - 1) {
 			separator += "-+-";
