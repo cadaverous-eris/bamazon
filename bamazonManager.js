@@ -25,7 +25,7 @@ function connected() {
 			{name: "View Products for Sale", value: "viewAll",},
 			{name: "View Low Inventory", value: "viewLow",},
 			{name: "Add to Inventory", value: "addInv",},
-			{name: "Add new Product", value: "addProduct",},
+			{name: "Add New Product", value: "addProduct",},
 		]
 	}).then(answer => {
 		switch(answer.action) {
